@@ -1,6 +1,11 @@
 import React from "react";
 
 const AddFishForm = () =>{
+  
+  const createFish = (event) => {
+    event.preventDefault();
+  };
+  
   return(
     <form className="fish-edit" onSubmit={createFish}>
         <input name="name" type="text" placeholder="Name"/>
